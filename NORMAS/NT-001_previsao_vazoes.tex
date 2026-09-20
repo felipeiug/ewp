@@ -1,0 +1,160 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{hyperref}
+
+\geometry{margin=2.5cm}
+\sisetup{locale=FR, per-mode=symbol}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+
+\title{NT-001\\Preparação e Avaliação de Modelos de Previsão de Vazões}
+\author{Felipe Emanuel Domiciano Ribeiro}
+\date{Revisão 0 — 20 de setembro de 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+\textbf{Projeto} & Previsão diária de vazões \tabularnewline
+\textbf{Fonte principal} & ANA/HIDROWEB \tabularnewline
+\textbf{Horizonte inicial} & 1 dia \tabularnewline
+\textbf{Unidade da vazão} & \si{\cubic\metre\per\second} \tabularnewline
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Objetivo}
+
+Esta nota técnica estabelece o procedimento mínimo para aquisição, preparação,
+modelagem e avaliação de séries de vazão. O processo deve preservar a
+proveniência dos dados, impedir vazamento temporal e produzir resultados
+reproduzíveis.
+
+\section{Fontes e proveniência}
+
+Os dados hidrológicos devem ser obtidos em canais oficiais da Agência Nacional
+de Águas e Saneamento Básico, preferencialmente pelo
+\href{https://www.snirh.gov.br/hidroweb/}{HIDROWEB} ou pelo
+\href{https://www.ana.gov.br/hidrowebservice/swagger-ui/index.html}{Hidro Webservice}.
+
+Para cada conjunto de dados, devem ser registrados:
+
+\begin{itemize}
+    \item código e nome da estação;
+    \item curso d'água, município e bacia, quando disponíveis;
+    \item data de obtenção e período solicitado;
+    \item tipo de série, frequência e unidade;
+    \item endereço ou método de acesso;
+    \item nome do arquivo original e resumo criptográfico SHA-256.
+\end{itemize}
+
+O arquivo obtido deve permanecer inalterado em
+\texttt{01\_dados/input/}. Conversões e tratamentos devem gerar novos arquivos
+nos respectivos diretórios de saída.
+
+\section{Controle de qualidade}
+
+A inspeção inicial deve identificar datas duplicadas, lacunas, valores não
+numéricos, vazões negativas, qualificadores da fonte e alterações relevantes na
+disponibilidade da série. Nenhuma observação pode ser excluída ou interpolada
+sem justificativa registrada.
+
+Considere a série observada
+
+\begin{equation}
+    \mathcal{Q} = \{Q_t\}_{t=1}^{N},
+\end{equation}
+
+em que $Q_t$ representa a vazão média diária, expressa em
+\si{\cubic\metre\per\second}.
+
+\section{Preparação temporal}
+
+A divisão entre treino, validação e teste deve respeitar a ordem cronológica.
+Como configuração inicial, adotam-se as proporções apresentadas na
+Tabela~\ref{tab:divisao}.
+
+\begin{table}[ht]
+    \centering
+    \caption{Divisão temporal inicial da série.}
+    \label{tab:divisao}
+    \begin{tabular}{lc}
+        \toprule
+        \textbf{Conjunto} & \textbf{Proporção} \\
+        \midrule
+        Treino & 70\% \\
+        Validação & 15\% \\
+        Teste & 15\% \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+Os parâmetros de normalização devem ser calculados exclusivamente com o
+conjunto de treino. Para média $\mu_{\mathrm{treino}}$ e desvio-padrão
+$\sigma_{\mathrm{treino}}$, utiliza-se
+
+\begin{equation}
+    Q_t^{*} = \frac{Q_t - \mu_{\mathrm{treino}}}
+    {\sigma_{\mathrm{treino}}}.
+\end{equation}
+
+\section{Modelo e referência}
+
+O modelo candidato é uma rede LSTM implementada em PyTorch. A entrada inicial
+corresponde aos 30 dias anteriores, e o alvo é a vazão do dia seguinte.
+
+O desempenho deve ser comparado com o modelo de persistência:
+
+\begin{equation}
+    \widehat{Q}_{t+1} = Q_t.
+\end{equation}
+
+Alterações de arquitetura, janela, horizonte ou variáveis explicativas devem
+ser registradas como decisões de modelagem.
+
+\section{Métricas de avaliação}
+
+As previsões devem ser avaliadas no mesmo período de teste por meio de RMSE,
+MAE e eficiência de Nash--Sutcliffe (NSE):
+
+\begin{align}
+    \mathrm{RMSE} &= \sqrt{\frac{1}{n}\sum_{i=1}^{n}
+    \left(Q_i-\widehat{Q}_i\right)^2}, \\
+    \mathrm{MAE} &= \frac{1}{n}\sum_{i=1}^{n}
+    \left|Q_i-\widehat{Q}_i\right|, \\
+    \mathrm{NSE} &= 1 -
+    \frac{\sum_{i=1}^{n}\left(Q_i-\widehat{Q}_i\right)^2}
+    {\sum_{i=1}^{n}\left(Q_i-\overline{Q}\right)^2}.
+\end{align}
+
+O relatório deve informar o intervalo avaliado, o número de observações e as
+unidades das métricas dimensionais.
+
+\section{Reprodutibilidade e aprovação}
+
+Cada execução oficial deve registrar código, configuração, sementes, versões
+das dependências, arquivos de entrada, pesos e métricas. O relatório final deve
+apresentar limitações, domínio de uso e comportamento em eventos extremos.
+Resultado estatístico favorável, isoladamente, não autoriza uso operacional.
+
+\section{Itens pendentes}
+
+\begin{itemize}
+    \item confirmar a estação fluviométrica e a bacia;
+    \item definir o período útil após a inspeção da série;
+    \item aprovar a política de tratamento de lacunas;
+    \item definir critérios específicos para eventos extremos.
+\end{itemize}
+
+\end{document}
