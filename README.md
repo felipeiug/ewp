@@ -42,9 +42,9 @@ A definição do agente está em [`.github/agents/EWP.agent.md`](.github/agents/
 ```text
 PROJETO/
 ├── ENGINEERING.md
+├── WORKFLOW/
+│   └── STEP_BY_STEP.md
 ├── REQUISITOS/
-│   ├── input/
-│   ├── output/
 │   ├── restricoes.md
 │   ├── unidades.md
 │   └── convencoes.md
@@ -63,6 +63,19 @@ PROJETO/
 ```
 
 As etapas numeradas são adaptadas ao fluxo real do projeto. Podem representar levantamento, dimensionamento, simulação, implementação, ensaio, validação, entrega ou qualquer outra sequência tecnicamente justificável.
+
+### `WORKFLOW/STEP_BY_STEP.md`
+
+A execução do projeto não fica embutida em `ENGINEERING.md`. O fluxo oficial e autoritativo deve existir em um arquivo separado, normalmente em `WORKFLOW/STEP_BY_STEP.md`.
+
+Essa arquitetura é fundamental porque a etapa de execução deve ser:
+
+- explícita;
+- revisável;
+- separada do contexto do projeto;
+- e possível de seguir por pessoas e agentes sem reconstruir o histórico da conversa.
+
+O arquivo de workflow define a sequência de etapas, dependências, entradas, saídas, validações e gates de aprovação. Em um projeto real, esse arquivo é o guia operacional do agente.
 
 ### `ENGINEERING.md`
 
@@ -90,6 +103,60 @@ Registra premissas, alternativas avaliadas, decisões tomadas, justificativas, i
 ### `NORMAS/`
 
 Armazena normas, procedimentos, referências técnicas e registros de verificação. As fontes ficam em `input/`; análises de aderência, checklists e resultados ficam em `output/`.
+
+## Workflow do agente e Step by Step
+
+O agente EWP deve operar sobre um fluxo de execução definido e explícito. A referência central é o arquivo `WORKFLOW/STEP_BY_STEP.md`.
+
+Esse arquivo deve conter, no mínimo:
+
+- a sequência oficial das etapas;
+- dependências entre etapas;
+- entradas e saídas esperadas;
+- critérios de validação;
+- gates de aprovação ou revisão;
+- condições para avançar para a próxima fase.
+
+A lógica do protocolo é simples: o projeto não avança por intuição; ele avança quando a etapa atual foi executada, validada e registrada de forma reproduzível.
+
+### Exemplo de step-by-step
+
+```markdown
+## Step by Step
+
+### 00 — Planejamento
+- Entrada: objetivo, escopo e premissas.
+- Saída: escopo aprovado e metas definidas.
+- Gate: aprovação antes de iniciar aquisição de dados.
+
+### 01 — Aquisição de dados
+- Dependência: etapa 00 aprovada.
+- Entrada: fontes originais em input/.
+- Saída: inventário e proveniência dos dados.
+- Gate: dados aceitos e rastreáveis.
+
+### 02 — Preparação e qualidade
+- Dependência: etapa 01 validada.
+- Entrada: dados inventariados.
+- Saída: dados tratados e documentados.
+- Gate: ausência de inconsistências e regras de tratamento registradas.
+
+### 03 — Modelagem
+- Dependência: etapa 02 aprovada.
+- Entrada: dados prontos para análise.
+- Saída: modelo, métricas e previsões.
+- Gate: validação técnica e comparação com baseline.
+
+### 04 — Validação
+- Dependência: etapa 03 revisada.
+- Entrada: resultados e evidências.
+- Saída: relatório de validação e limitações.
+- Gate: aceitação do responsável ou retrabalho.
+
+### 05 — Relatório final
+- Dependência: etapa 04 concluída.
+- Saída: síntese executiva e documentação final.
+```
 
 ### Etapas numeradas
 
@@ -157,10 +224,11 @@ O EWP não determina quais ferramentas técnicas devem ser usadas. Ele organiza 
 1. Baixe ou clone este repositório como base do agente EWP.
 2. Instale ou selecione o agente definido em `.github/agents/EWP.agent.md`.
 3. Abra o workspace em um ambiente compatível.
-4. Use o repositório como template para criar um projeto real ou adaptar a estrutura a um caso concreto.
-5. Peça ao agente para iniciar o workspace ou execute o comando `START`.
-6. Confirme as informações e gates indicados no `ENGINEERING.md`.
-7. Conduza o projeto pelas etapas registradas.
+4. Verifique a presença de `ENGINEERING.md` e `WORKFLOW/STEP_BY_STEP.md`.
+5. Use o repositório como template para criar um projeto real ou adaptar a estrutura a um caso concreto.
+6. Peça ao agente para iniciar o workspace ou execute o comando `START`.
+7. Confirme as informações e gates indicados no `ENGINEERING.md` e siga o workflow autoritativo.
+8. Conduza o projeto pelas etapas registradas.
 
 ## Exemplo incluído
 
