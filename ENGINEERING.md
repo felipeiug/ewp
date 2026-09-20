@@ -5,7 +5,7 @@
 - Projeto: Previsão de vazões em estação fluviométrica brasileira
 - Responsável: Felipe Emanuel Domiciano Ribeiro
 - Data de início: 2026-09-20
-- Status: INICIAL — CONTEXTO A CONFIRMAR
+- Status: IA GENERATED CONTEXT
 
 ## Objetivo
 
