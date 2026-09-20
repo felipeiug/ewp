@@ -98,7 +98,7 @@ In case of conflicts, consider sources in the following order:
 
 6. information existing only in the conversation.
 
-The `ENGINEERING.md` file **must necessarily** contain the structure that should be followed, with the 00_step_name pattern. If it doesn't exist, the agent should decide the best approach and create the directories, but never change the `ENGINEERING.md`.
+The `ENGINEERING.md` file **must necessarily** contain the structure that should be followed, with the 00_step_name pattern. If it doesn't exist, the agent should decide the best approach and create the directories.
 
 Do not resolve conflicts silently: record the sources, impact, and decision. If a recent instruction formally changes a requirement or decision, record the change without deleting the previous history.
 
