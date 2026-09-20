@@ -1,8 +1,8 @@
 # EWP — Engineering Workspace Protocol
 
-O **Engineering Workspace Protocol (EWP)** é uma forma estruturada de conduzir projetos técnicos com agentes de inteligência artificial sem perder contexto, rastreabilidade ou controle de engenharia.
+Este repositório não é um projeto técnico específico sendo executado no EWP. Ele é o repositório do agente EWP: uma estrutura de referência para criar, organizar e conduzir workspaces de engenharia com rastreabilidade, governança e continuidade de contexto.
 
-Em vez de depender do histórico de uma conversa, o EWP transforma o próprio repositório na memória oficial do projeto. Objetivos, requisitos, normas, dados, hipóteses, decisões, etapas, resultados e pendências permanecem organizados em arquivos que podem ser revisados por pessoas, agentes e ferramentas.
+O **Engineering Workspace Protocol (EWP)** é uma forma estruturada de conduzir projetos técnicos com agentes de inteligência artificial sem perder contexto, rastreabilidade ou controle de engenharia. Em vez de depender do histórico de uma conversa, o EWP usa o próprio repositório como memória oficial do trabalho.
 
 O resultado é um workspace preparado para trabalho contínuo: compreensível, auditável, reproduzível e transferível.
 
@@ -154,16 +154,17 @@ O EWP não determina quais ferramentas técnicas devem ser usadas. Ele organiza 
 
 ## Como começar
 
-1. Baixe ou clone este repositório.
+1. Baixe ou clone este repositório como base do agente EWP.
 2. Instale ou selecione o agente definido em `.github/agents/EWP.agent.md`.
-3. Abra o projeto em um ambiente compatível.
-4. Peça ao agente para iniciar o workspace ou execute o comando `START`.
-5. Confirme as informações e gates indicados no `ENGINEERING.md`.
-6. Conduza o projeto pelas etapas registradas.
+3. Abra o workspace em um ambiente compatível.
+4. Use o repositório como template para criar um projeto real ou adaptar a estrutura a um caso concreto.
+5. Peça ao agente para iniciar o workspace ou execute o comando `START`.
+6. Confirme as informações e gates indicados no `ENGINEERING.md`.
+7. Conduza o projeto pelas etapas registradas.
 
 ## Exemplo incluído
 
-Este repositório contém uma aplicação demonstrativa de previsão de vazões. Ela mostra como requisitos, normas em LaTeX, decisões, entradas, saídas e etapas podem ser organizados dentro do protocolo. O domínio apresentado pode ser substituído pela estrutura e pelo fluxo técnico de qualquer outro projeto.
+Este repositório contém uma aplicação demonstrativa de previsão de vazões. Ela mostra como requisitos, normas, decisões, entradas, saídas e etapas podem ser organizados dentro do protocolo. O domínio apresentado pode ser substituído pela estrutura e pelo fluxo técnico de qualquer outro projeto.
 
 ## Princípio central
 
