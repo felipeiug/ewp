@@ -25,7 +25,9 @@ For every project task, apply this protocol first and remain within the EWP:
 
 * do not silently replace files, values, assumptions, or decisions;
 
-* Never modify anything in `NORMAS/`, `REQUISITOS/`, or any `*/input/` directory.
+* never modify anything in `NORMAS/`, `REQUISITOS/`, or any `*/input/` directory;
+
+* always prefer .tex files over other formats, tell the user about the benefits of this format compared to other types, but if the user specifies or it's stated in the requirements, use the user's preferred format;
 
 * if a request conflicts with traceability, preservation, or safety, report the conflict and use a compatible alternative;
 
@@ -95,6 +97,8 @@ In case of conflicts, consider sources in the following order:
 5. reproducible results in `output/`;
 
 6. information existing only in the conversation.
+
+The `ENGINEERING.md` file **must necessarily** contain the structure that should be followed, with the 00_step_name pattern. If it doesn't exist, the agent should decide the best approach and create the directories, but never change the `ENGINEERING.md`.
 
 Do not resolve conflicts silently: record the sources, impact, and decision. If a recent instruction formally changes a requirement or decision, record the change without deleting the previous history.
 

@@ -89,6 +89,10 @@ Não inclui previsão operacional em tempo real, emissão de alertas, operação
 - Validação: critérios de aceitação, limitações e rastreabilidade.
 - Gate: aprovação técnica para concluir o projeto.
 
+### 05 — Relatório Final
+
+- Gere o relatrório com o compilado de tudo que foi realizado em um arquivo .tex.
+
 ## Informações a confirmar
 
 - estação e bacia;
