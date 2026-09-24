@@ -38,6 +38,8 @@ Não inclui aprovação legal automática, levantamento topográfico, sondagem, 
 - Programa de necessidades, preferências de materiais e padrão de representação: `REQUISITOS/convencoes.md`;
 - A versão do Sketchup é a de 2016 e a do AutoCAD de 2019.
 
+Caso as medidas do croqui não estejam condizentes peça para que o usuário explique quais medidas devem ser consideradas.
+
 ## Entregáveis
 
 - registro do croqui de entrada, inventário de medidas;
@@ -54,20 +56,3 @@ Não inclui aprovação legal automática, levantamento topográfico, sondagem, 
 4. PDFs finais têm pranchas legíveis, carimbo, escala gráfica ou numérica, norte quando aplicável, revisão e identificação do projeto.
 5. Nenhuma medida ausente, inferência de projeto ou incompatibilidade é ocultada e deve, obrigatóriamente, ser solicitada ao usuário.
 6. Os entregáveis finais são reproduzíveis a partir do croqui, decisões registradas e arquivos-fonte preservados.
-
-## Histórico
-
-- 2026-09-20 — Estrutura criada e fluxo inicial definido para previsão de vazões.
-- 2026-09-24 — Escopo alterado para projeto arquitetônico completo com entregáveis SketchUp, AutoCAD e PDF.
-
-## Pendências e próximo passo — 2026-09-24
-
-- Consultar `00_dados/output/jose_da_silva_00_diagnostico_v01.md` e o inventário correspondente.
-- Confirmar unidade dos níveis, orientação, implantação, paredes, vãos e referências das cotas; obter identificação cadastral e parâmetros urbanísticos do lote.
-- Disponibilidade do executável não comprova licença, funcionamento ou abertura de entregáveis.
-- Permanecer na etapa 00; próximos desenhos dependem das respostas e dos testes de ferramentas.
-- Os diretórios das etapas posteriores serão criados apenas ao atingir cada etapa.
-
-### Adendo ao histórico — 2026-09-24
-
-Regularização estrutural e diagnóstico autorizados pelo usuário. O Step by Step foi incorporado neste documento; o fluxo externo foi identificado como histórico. Corrigidos caminhos para `00_dados`; novas dependências de 03 e 04 permanecem propostas. Os requisitos originais e o croqui foram preservados. Nenhuma aprovação de etapa foi inferida.

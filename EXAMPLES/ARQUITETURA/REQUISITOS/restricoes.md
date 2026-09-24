@@ -1,6 +1,5 @@
 # Restrições
 
-- Não inventar cotas, níveis, divisas, vãos ou orientação sem marcar a hipótese e solicitar confirmação.
 - Não apresentar estudo preliminar como projeto legal, executivo ou documento de obra sem os requisitos e validações correspondentes.
 - Não ocultar incompatibilidades entre planta, corte, fachada e modelo 3D.
 - Não substituir arquivos editáveis por apenas imagens ou PDFs quando o entregável exigir AutoCAD ou SketchUp.

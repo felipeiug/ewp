@@ -80,11 +80,8 @@ PROJECT/
 └── at least one numbered project stage
 ```
 
-`REQUISITOS/` MUST contain `restricoes.md`, `unidades.md`, and
-`convencoes.md` directly. The subdirectories `REQUISITOS/input/` and
-`REQUISITOS/output/` are optional and MUST be created only when there are
-source documents or derived results that require separate storage. Their
-absence does not make an EWP workspace incomplete.
+`REQUISITOS/` MUST contain `restricoes.md`, `unidades.md`, and `convencoes.md` directly.
+`NORMAS/` MUST contain files. No need to include the input and output subdirectories.
 
 The numbered project stage SHOULD normally follow:
 
@@ -123,7 +120,7 @@ The authoritative project execution workflow is defined in:
 
 10. If multiple possible Step by Step files exist and the authoritative one cannot be determined, do not choose silently. Identify the conflict and request clarification if it blocks execution.
 
-11. If no Step by Step exists, the agent MUST create one based on:
+11. If no Step by Step exists in `WORKFLOW/STEP_BY_STEP.md`, the agent MUST create one based on:
 
 * project objective;
 * scope;
@@ -173,14 +170,15 @@ PROJECT/
 │   ├── unidades.md
 │   └── convencoes.md
 ├── NORMAS/
+│   ├── file_1.pdf
+│   ├── file_2.md
+│   └── file_3.docx
 └── 00_etapa/
     ├── input/
     └── output/
 ```
 
-Do not create empty `REQUISITOS/input/` or `REQUISITOS/output/` directories
-during initialization. Create them later only when their respective content
-exists.
+Do not create `REQUISITOS/input/` or `REQUISITOS/output/` or `NORMAS/input/` or `NORMAS/output/`.
 
 Adapt the initial numbered stage to the actual project when sufficient context exists.
 
@@ -221,18 +219,6 @@ Maintain, when applicable:
 * reference to the authoritative external workflow.
 
 The Step by Step workflow MUST remain outside this file.
-
-`ENGINEERING.md` MUST reference the authoritative workflow.
-
-Example:
-
-```markdown
-## Execution Workflow
-
-The authoritative execution workflow is:
-
-`WORKFLOW/STEP_BY_STEP.md`
-```
 
 ### Project Status
 
