@@ -1,0 +1,8 @@
+{
+  "url": "https://bhmap.pbh.gov.br/v2/api/idebhgeo/wfs?service=WFS&version=1.0.0&request=DescribeFeatureType&typeName=ide_bhgeo:ENDERECO",
+  "data": "2026-09-24T16:34:59.848256-03:00",
+  "status": 200,
+  "bytes": 3071,
+  "scripts": [],
+  "inicio": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><xsd:schema xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:gml=\"http://www.opengis.net/gml\" xmlns:ide_bhgeo=\"http://bhmap.pbh.gov.br/v2\" elementFormDefault=\"qualified\" targetNamespace=\"http://bhmap.pbh.gov.br/v2\">\n  <xsd:import namespace=\"http://www.opengis.net/gml\" schemaLocation=\"https://geoservicos.pbh.gov.br/geoserver/schemas/gml/2.1.2/feature.xsd\"/>\n "
+}

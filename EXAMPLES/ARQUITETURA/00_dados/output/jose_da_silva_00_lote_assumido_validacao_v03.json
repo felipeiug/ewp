@@ -1,0 +1,27 @@
+{
+  "data": "2026-09-24T16:42:57.776936-03:00",
+  "fontes_sha256": {
+    "ENGINEERING.md": "469df3e0d7975b9c280cb8c844e8a51a6dbec4c22a0f6ee2a76a29d4eac91b3a",
+    "REQUISITOS\\convencoes.md": "97a51b5a854ec1541431a5c631924fa27883d90583e6f8afa07736f572ff10ed",
+    "WORKFLOW\\STEP_BY_STEP.md": "2fc215572317e629fb21b74366633fa2983247e4e2fe6da41b53168674beff10",
+    "HIPOTESES_DECISOES\\output\\2026-09-24_1640_lote_assumido.md": "e14894b0de4f913a87cc7db6aef6fb9f8d1848ec5094089aade8e47ab836f75c",
+    "00_dados\\output\\jose_da_silva_00_geometria_v02.json": "5c145f3a051a0ab8d63a5111ad4d7b38d7b5e3a66d34f7481c2d0252e9e882b1"
+  },
+  "fontes_originais_preservadas": true,
+  "derivados_v02_preservados": true,
+  "contencao_casa_e_vagas": "PASS",
+  "sobreposicoes": "ZERO",
+  "distancia_frontal_min_cm": 550,
+  "laterais_cm": [
+    150,
+    150
+  ],
+  "fundos_cm": 300,
+  "conformidade_urbanistica": "NAO VERIFICADA; cadastro dispensado para estudo pelo usuario",
+  "aprovacao_etapa_00": "AGUARDANDO REVISAO",
+  "saidas_sha256": {
+    "jose_da_silva_00_lote_assumido_v03.png": "4760b6e532fbf7bbe02f617f850a7e6000350a5848732983383b67d51bca659b",
+    "jose_da_silva_00_lote_assumido_v03.md": "7e77c5bc6e20a1048f2a78c15a876cd0b4a61bc177535810fddd5faa439e6bd3",
+    "jose_da_silva_00_lote_assumido_v03.py": "b8b7439bf1d7373ea8618cee95a3afd38c95d945fc97d147a3b69dc06d2b9ce9"
+  }
+}

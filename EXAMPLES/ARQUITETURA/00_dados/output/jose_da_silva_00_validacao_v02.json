@@ -1,0 +1,78 @@
+{
+  "data": "2026-09-24T16:37:49.170555-03:00",
+  "fontes_sha256": {
+    "00_dados\\input\\croqui.jpg": "50f1265662b0ecfa4d3591e28ec07887df585c3d32d33cfbeec1502c8f679ac1",
+    "00_dados\\input\\carimbo.png": "9a3f814f7c24427cb3ebd3f5b677c743766014609573f1a679d9f280817e0d43",
+    "REQUISITOS\\convencoes.md": "6ea8593df47235527592a51d01641e8bb0333a1604d0013c682de55709a581c6",
+    "REQUISITOS\\unidades.md": "ae6acf056db7d37e1854a89c499f5d81e7373d580448a8d24800a12b2c75a7c7",
+    "REQUISITOS\\restricoes.md": "09db6f31f0f51f94ad8942f919cc5931e8c6fa3239544c9aa0cf9f090a0b2904",
+    "NORMAS\\plano_diretor_bh.pdf": "8daf86b6e1017258367d9eb6abe2793a5578c4ec2f9d792af33c34fa39980315",
+    "WORKFLOW\\STEP_BY_STEP.md": "42c6c5c483567d75e61f1e084bd393551d9b4b1606957aa4b912d854aca4bf0c",
+    "HIPOTESES_DECISOES\\output\\2026-09-24_1631_prioridade_cotas_externas.md": "9a00868ddc8739c35442d67f4cfc0ab88e9ea68839104a3e4398205b6a3cdff2",
+    "HIPOTESES_DECISOES\\output\\2026-09-24_1636_consulta_lote.md": "3bf37c205b10463ee2f6ccfeca330b45fabf6d06d3afc1adbc5aeb57ddf1b5da"
+  },
+  "fontes_preservadas": true,
+  "contorno_area_m2": 84.15,
+  "corredor_livre_cm": 100,
+  "paredes_sem_sobreposicao": true,
+  "malhas_fechadas_e_volume_orientado": "PASS",
+  "dxf": {
+    "auditoria_ezdxf": "PASS, sem erros ou reparos",
+    "versao": "AC1027",
+    "unidade": "cm",
+    "secao_120cm_contra_fonte": "PASS",
+    "textos_cotas_iguais_medidas_cm": "PASS",
+    "abertura_AutoCAD_2019": "NAO TESTADA",
+    "limites_paredes_cm": [
+      [
+        0,
+        0
+      ],
+      [
+        750,
+        1150
+      ]
+    ],
+    "entidades": 155
+  },
+  "skp": {
+    "grupos": 16,
+    "faces": 466,
+    "arestas": 932,
+    "arestas_nao_manifold": 0,
+    "unidade": "cm",
+    "limites_cm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        750.0,
+        1150.0,
+        300.0
+      ]
+    ],
+    "reabertura": "PASS: SketchUpAPI 16.1.1449",
+    "interface_grafica": "NAO TESTADA"
+  },
+  "versoes": {
+    "python": "3.12.8 (tags/v3.12.8:2dc476b, Dec  3 2024, 19:30:04) [MSC v.1942 64 bit (AMD64)]",
+    "ezdxf": "1.4.4",
+    "shapely": "2.1.2",
+    "numpy": "2.2.5",
+    "matplotlib": "3.10.1",
+    "sketchup_api": "16.1.1449"
+  },
+  "conformidade_legal": "PENDENTE",
+  "aprovacao_etapa_00": "PENDENTE",
+  "saidas_sha256": {
+    "jose_da_silva_00_geometria_v02.json": "5c145f3a051a0ab8d63a5111ad4d7b38d7b5e3a66d34f7481c2d0252e9e882b1",
+    "jose_da_silva_00_planta_v02.dxf": "3c3f86bfc015b20bb14dbd3a762a33cd562f5aacae4b903c1590ef90f25de47f",
+    "jose_da_silva_00_paredes_v02.skp": "72e5f083385c7ad864ff8c855363ff8d9bafa7de011219d8d58bc57a9fb7c33a",
+    "jose_da_silva_00_conferencia_planta_v02.png": "ed3e23b95b0d9269b93391d63c2fa91a3401802a2a93e2e6a558395af01620fd",
+    "jose_da_silva_00_conferencia_3d_v02.png": "d9db252af429e5c922104d96f3b2cf551b8f9bea2dad1ea749a428161a5e3921",
+    "jose_da_silva_00_memorial_v02.md": "c513dcacdabc279405a194d4aa903334cbefa304f3c62751be8e19f99da794f4",
+    "jose_da_silva_00_conferencia_dxf_v02.png": "680c89ac5e95c9956bfae0f1e83867d0b59d978d6b2a8edaee1bb11720bad766"
+  }
+}

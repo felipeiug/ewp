@@ -1,0 +1,8 @@
+{
+  "url": "https://bhmap.pbh.gov.br/v2/api/idebhgeo/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=ide_bhgeo%3AENDERECO&outputFormat=application%2Fjson&maxFeatures=2000&CQL_FILTER=CEP+%3D+30310150+AND+NUMERO_IMOVEL+%3D+1356",
+  "data": "2026-09-24T16:35:22.982998-03:00",
+  "status": 200,
+  "bytes": 147,
+  "scripts": [],
+  "inicio": "{\"type\":\"FeatureCollection\",\"features\":[],\"totalFeatures\":0,\"numberMatched\":0,\"numberReturned\":0,\"timeStamp\":\"2026-09-24T19:35:22.777Z\",\"crs\":null}"
+}

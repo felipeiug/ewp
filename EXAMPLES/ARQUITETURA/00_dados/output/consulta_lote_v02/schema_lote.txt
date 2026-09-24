@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml" xmlns:ide_bhgeo="http://bhmap.pbh.gov.br/v2" elementFormDefault="qualified" targetNamespace="http://bhmap.pbh.gov.br/v2">
+  <xsd:import namespace="http://www.opengis.net/gml" schemaLocation="https://geoservicos.pbh.gov.br/geoserver/schemas/gml/2.1.2/feature.xsd"/>
+  <xsd:complexType name="LOTE_CTMType">
+    <xsd:complexContent>
+      <xsd:extension base="gml:AbstractFeatureType">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="1" name="ID_LT" nillable="false" type="xsd:decimal"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="NULOTCTM" nillable="false" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="ID_QUADRA_CTM" nillable="false" type="xsd:decimal"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="AREA_M2" nillable="true" type="xsd:decimal"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="GEOMETRIA" nillable="true" type="gml:MultiPolygonPropertyType"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="LOTE_CTM" substitutionGroup="gml:_Feature" type="ide_bhgeo:LOTE_CTMType"/>
+</xsd:schema>

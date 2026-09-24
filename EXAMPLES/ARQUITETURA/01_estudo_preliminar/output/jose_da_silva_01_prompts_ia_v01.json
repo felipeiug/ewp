@@ -1,0 +1,7 @@
+{
+  "mode": "built-in image_gen",
+  "references": {
+    "superior": "jose_da_silva_01_referencia_superior_v01.png",
+    "fachada": "jose_da_silva_01_referencia_fachada_v01.png"
+  }
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml" xmlns:ide_bhgeo="http://bhmap.pbh.gov.br/v2" elementFormDefault="qualified" targetNamespace="http://bhmap.pbh.gov.br/v2">
+  <xsd:import namespace="http://www.opengis.net/gml" schemaLocation="https://geoservicos.pbh.gov.br/geoserver/schemas/gml/2.1.2/feature.xsd"/>
+  <xsd:complexType name="ENDERECOType">
+    <xsd:complexContent>
+      <xsd:extension base="gml:AbstractFeatureType">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="IDEND" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="ID_EDC" nillable="false" type="xsd:decimal"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="ID_LOGRADOURO" nillable="false" type="xsd:decimal"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="SIGLA_TIPO_LOGRADOURO" nillable="false" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="DESC_TIPO_LOGRADOURO" nillable="false" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="NOME_LOGRADOURO" nillable="false" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="NUMERO_IMOVEL" nillable="false" type="xsd:decimal"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="LETRA_IMOVEL" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="ID_BAIRRO_POPULAR" nillable="true" type="xsd:decimal"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="NUM_BAIRRO_POPULAR" nillable="false" type="xsd:decimal"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="NOME_BAIRRO_POPULAR" nillable="false" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="ID_BAIRRO_OFICIAL" nillable="true" type="xsd:decimal"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="NUM_BAIRRO_OFICIAL" nillable="false" type="xsd:decimal"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="TIPO_BAIRRO_OFICIAL" nillable="false" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="NOME_BAIRRO_OFICIAL" nillable="false" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="ID_REGIONAL" nillable="true" type="xsd:decimal"/>
+          <xsd:element maxOccurs="1" minOccurs="1" name="NOME_REGIONAL" nillable="false" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="CEP" nillable="true" type="xsd:decimal"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="EXISTENCIA_NUM_LOCAL" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="SITUACAO_PBH" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="GEOMETRIA" nillable="true" type="gml:PointPropertyType"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="ENDERECO" substitutionGroup="gml:_Feature" type="ide_bhgeo:ENDERECOType"/>
+</xsd:schema>

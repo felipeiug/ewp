@@ -1,0 +1,21 @@
+{
+  "crs": "EPSG:32632",
+  "resolucao_m": 10.0,
+  "dimensoes": {
+    "linhas": 240,
+    "colunas": 245
+  },
+  "area_bacia_m2": 5880000.0,
+  "declividade_pct": {
+    "min": 10.039361645920856,
+    "max": 32.12874184221449,
+    "mean": 21.753829829099473,
+    "median": 21.762978143551116,
+    "std": 2.2397003958530677,
+    "p95": 24.86064838350561,
+    "valid_cells": 58800
+  },
+  "metodo": "np.gradient + hipot + 100",
+  "arquivo_mde": "G:\\My Drive\\Projetos\\ewp\\EXAMPLES\\GIS\\01_DADOS\\input\\mde_sintetico.tif",
+  "arquivo_bacia": "G:\\My Drive\\Projetos\\ewp\\EXAMPLES\\GIS\\01_DADOS\\input\\bacia_sintetica.geojson"
+}

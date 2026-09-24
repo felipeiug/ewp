@@ -1,0 +1,17 @@
+{
+  "data_execucao_utc": "2026-09-24T22:25:57Z",
+  "crs": "EPSG:32632",
+  "resolucao_m": 10.0,
+  "declividade_pct": {
+    "min": 10.039361645920856,
+    "max": 32.12874184221449,
+    "mean": 21.753829829099473,
+    "median": 21.762978143551116,
+    "std": 2.2397003958530677,
+    "p95": 24.86064838350561
+  },
+  "media_bacia_pct": 21.753829829099473,
+  "area_bacia_m2": 5880000.0,
+  "arquivo_raster": "G:\\My Drive\\Projetos\\ewp\\EXAMPLES\\GIS\\02_PROCESSAMENTO\\output\\declividade_pct.tif",
+  "arquivo_mapa": "G:\\My Drive\\Projetos\\ewp\\EXAMPLES\\GIS\\03_RESULTADOS\\output\\mapa_declividade.png"
+}

@@ -1,0 +1,8 @@
+{
+  "url": "https://bhmap.pbh.gov.br/v2/api/idebhgeo/wfs?service=WFS&version=1.0.0&request=GetFeature&typeName=ide_bhgeo%3AENDERECO&outputFormat=application%2Fjson&maxFeatures=2000&CQL_FILTER=NOME_LOGRADOURO+ILIKE+%27OLIVEIRA%27+AND+NOME_BAIRRO_POPULAR+ILIKE+%27CRUZEIRO%27",
+  "data": "2026-09-24T16:35:22.981941-03:00",
+  "status": 200,
+  "bytes": 32325,
+  "scripts": [],
+  "inicio": "{\"type\":\"FeatureCollection\",\"features\":[{\"type\":\"Feature\",\"id\":\"ENDERECO.68867\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[612104.63941912,7794380.19220887]},\"geometry_name\":\"GEOMETRIA\",\"properties\":{\"IDEND\":\"04987500032\",\"ID_EDC\":68867,\"ID_LOGRADOURO\":49875,\"SIGLA_TIPO_LOGRADOURO\":\"RUA\",\"DESC_TIPO_LOGRADOURO\":\"RUA\",\"NOME_LOGRADOURO\":\"OLIVEIRA\",\"NUMERO_IMOVEL\":32,\"LETRA_IMOVEL\":null,\"ID_BAIRRO_POPU"
+}

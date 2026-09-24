@@ -5,6 +5,7 @@
 - Verificar croqui feito à mão com medidas em `00_dados/input/` e informar inconsistências, ambiente inacessíveis ou fora de padrão e outros dados que sejam necessários.
 - Saída: arquivo da planta baixa `.dxf` e residência, somente paredes, `.skp` salvo em `00_dados/output/`.
 - Validação: confirmar uso, local, lote, orientação, níveis, medidas críticas, legislação e formatos de entrega.
+- Exceção autorizada em 2026-09-24: identificação cadastral dispensada; local e lote de 1050 × 2000 cm aceitos como premissas de estudo. A conferência urbanística específica permanece não verificada e não impede o avanço do estudo por falta de cadastro. Histórico: `HIPOTESES_DECISOES/output/2026-09-24_1640_lote_assumido.md`. Mantida a aprovação da etapa 00 antes da etapa 01.
 
 ### 01 — Render 3D
 

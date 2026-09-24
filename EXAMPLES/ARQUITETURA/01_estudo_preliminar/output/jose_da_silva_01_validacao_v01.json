@@ -1,0 +1,60 @@
+{
+  "mobiliario_contido": "PASS",
+  "colisoes_mobiliario": "ZERO",
+  "giros_portas_livres": "PASS",
+  "caminho_pedonal_sem_sobreposicao": "PASS",
+  "caminho_pedonal_nominal_cm": 100,
+  "passagem_D3_entre_cama_armario_cm": 68,
+  "acessibilidade_normativa": "NAO VERIFICADA",
+  "manobras_veiculos": "NAO SIMULADAS",
+  "fontes_preservadas": true,
+  "skp": {
+    "groups": 409,
+    "faces": 6065,
+    "edges": 12587,
+    "nonmanifold_edges": 0,
+    "preserved_wall_groups": 16,
+    "preserved_wall_faces": 466,
+    "scenes": 3,
+    "layers": 18,
+    "materials": 27,
+    "limits_cm": [
+      [
+        0.0,
+        0.0,
+        -15.0
+      ],
+      [
+        1050.0,
+        2000.0,
+        360.0
+      ]
+    ],
+    "unit": "cm",
+    "reopen": "PASS: SketchUpAPI 16.1.1449",
+    "GUI": "NAO TESTADA"
+  },
+  "data": "2026-09-24T18:13:03.697072-03:00",
+  "fontes_sha256": {
+    "00_dados\\output\\jose_da_silva_00_geometria_v02.json": "5c145f3a051a0ab8d63a5111ad4d7b38d7b5e3a66d34f7481c2d0252e9e882b1",
+    "00_dados\\output\\jose_da_silva_00_paredes_v02.skp": "72e5f083385c7ad864ff8c855363ff8d9bafa7de011219d8d58bc57a9fb7c33a",
+    "00_dados\\output\\jose_da_silva_00_planta_v02.dxf": "3c3f86bfc015b20bb14dbd3a762a33cd562f5aacae4b903c1590ef90f25de47f",
+    "00_dados\\input\\croqui.jpg": "50f1265662b0ecfa4d3591e28ec07887df585c3d32d33cfbeec1502c8f679ac1",
+    "REQUISITOS\\convencoes.md": "97a51b5a854ec1541431a5c631924fa27883d90583e6f8afa07736f572ff10ed",
+    "REQUISITOS\\unidades.md": "ae6acf056db7d37e1854a89c499f5d81e7373d580448a8d24800a12b2c75a7c7",
+    "HIPOTESES_DECISOES\\output\\2026-09-24_1802_aprovacao_00_estudo_01.md": "fea3042aff5e268afc43b323a5105dbb2abb029448b66248054f17577046ae14"
+  },
+  "numero_itens_mobiliario": 29,
+  "numero_partes": 308,
+  "saidas_sha256": {
+    "jose_da_silva_01_skp_v01.py": "02c1f69c14f39989ee522a1ba8af5a38a13cd5aec9873ab25a943ccdca3d2bd9",
+    "jose_da_silva_01_gerar_v01.py": "d12b03f18e6d03db847b9b163fb5179a7d9a0f597f3163b0577a482dc5147797",
+    "jose_da_silva_01_geometria_v01.json": "23c56211c60d98c6104a606fee703d38897391dbdaa8b3e3cafdbdee1f0f9f9b",
+    "jose_da_silva_01_mobiliado_v01.skp": "26537f71ae84572752efa21a4cf169fbdd9775ee733ba7542a8ecc74e2dcb0e8",
+    "jose_da_silva_01_referencia_superior_v01.png": "21eca7c3f760e2bd216194f3a1fcd85f844775c661b223475673443fd1736d4f",
+    "jose_da_silva_01_referencia_fachada_v01.png": "b4b1f5d8b68022d9884c3ea54697ce80415f66785109b123e1856e08e4057d27",
+    "jose_da_silva_01_vistas_v01.py": "ffe743f1d9aeba6bc048e805c759de87401e8355aae4374da8bc887bc0e0c45d",
+    "jose_da_silva_01_prompts_ia_v01.json": "b9690541a12393f3a5ad76a387be3cafc377a3259fc73fe5e0bb026a06755168",
+    "jose_da_silva_01_memorial_v01.md": "d064e555daabdc66108acaf067f7b4f030fb2b12db7cc923983fe0e5e85869d4"
+  }
+}
