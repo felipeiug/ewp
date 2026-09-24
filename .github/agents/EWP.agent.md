@@ -80,6 +80,12 @@ PROJECT/
 └── at least one numbered project stage
 ```
 
+`REQUISITOS/` MUST contain `restricoes.md`, `unidades.md`, and
+`convencoes.md` directly. The subdirectories `REQUISITOS/input/` and
+`REQUISITOS/output/` are optional and MUST be created only when there are
+source documents or derived results that require separate storage. Their
+absence does not make an EWP workspace incomplete.
+
 The numbered project stage SHOULD normally follow:
 
 ```text
@@ -171,6 +177,10 @@ PROJECT/
     ├── input/
     └── output/
 ```
+
+Do not create empty `REQUISITOS/input/` or `REQUISITOS/output/` directories
+during initialization. Create them later only when their respective content
+exists.
 
 Adapt the initial numbered stage to the actual project when sufficient context exists.
 
